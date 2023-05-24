@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #131d2c;
+}
+
+.background-center-div {
+  background-color: rgb(40, 48, 56);
+  width: 80%;
+  height: 100%;
+  position: absolute;
+  left: 10%;
+  border-right: 4px groove #a9ccdd;
+  border-left: 4px groove #a9ccdd;
+  animation: mymove 10s infinite;
+
+  -webkit-box-shadow: 0px 0px 63px 39px rgb(154, 190, 203);
+  -moz-box-shadow: 0px 0px 63px 39px rgb(154, 190, 203);
+  box-shadow: 0px 0px 63px 39px rgb(154, 190, 203);
+}
+@keyframes mymove {
+  50% {
+    box-shadow: 0px 0px 50px 20px rgb(167, 182, 189);
+  }
+}
