@@ -1,13 +1,20 @@
 import { useState, useEffect, useRef } from 'react';
 import Navbar from './Navbar';
+import BackNeon from './img/backneon.png'
+import hah from './img/hah.jpg'
 
 const MainPage = () => {
   return (
     <>
       <Navbar />
-      <div className="brick-background"></div>
       <div className="background-center-div">
-        <div className="photo">a</div>
+        <img src={hah} alt='hah' className='photo'/>
+        <img src={BackNeon} alt='bakcneon'/>
+        <div className='about-me'>
+        <p>Hi! My name is Łukasz and i'm aspiring Front-End Developer.</p>
+        </div>
+      </div>
+      <div>
       </div>
     </>
   );
