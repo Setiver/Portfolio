@@ -32,8 +32,9 @@ const Main = () => {
           <FirstPart />
         </div>
         <div ref={techSectionRef} className="tech-section">
-          <Tech />
+          {' '}
         </div>
+        <Tech />
       </div>
     </>
   );
