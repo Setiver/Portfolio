@@ -91,29 +91,82 @@ body {
   top: 10%;
   left: 10%;
 }
+/* first section */
 
 .photo {
   position: absolute;
-  top: 13.5%;
+  top: 21%;
   left: 15%;
   width: 21rem;
   height: 21rem;
   border-radius: 300px 300px 300px 300px;
   z-index: -1;
 }
+.photo-border {
+  position: relative;
+  top: 3rem;
+}
 .about-me {
   font-size: 2rem;
   position: relative;
   left: 50%;
-  top: -50%;
+  top: -25rem;
   width: 50rem;
 }
 
 /* second part */
-.second-part {
-  position: absolute;
-}
 .tech-section {
   position: absolute;
-  top: 150vh;
+  top: 100vh;
+}
+
+.second-part {
+  position: absolute;
+  height: 90vh;
+  width: 150vh;
+}
+
+.line {
+  content: '';
+  position: absolute;
+  top: 1rem;
+  height: 0.5rem;
+  width: 60vh;
+  z-index: -1;
+  background-size: 700% 100%;
+}
+
+.line.left {
+  left: 1%;
+  animation: animatedgradient 3s linear infinite;
+  background-image: linear-gradient(90deg, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #a200ad, #ef4e7b, #a166ab);
+}
+
+@keyframes animatedgradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+
+.line.right {
+  background-image: linear-gradient(90deg, #a166ab, #ef4e7b, #a200ad, #07b39b, #1098ad, #5073b8, #a166ab, #ef4e7b);
+
+  left: 59%;
+  animation: animatedgradientright 3s linear infinite;
+}
+
+@keyframes animatedgradientright {
+  0% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+.what-i-use {
+  font-size: 3rem;
+  text-align: center;
 }
