@@ -1,7 +1,7 @@
 import Tech from './Tech';
 import { useRef } from 'react';
-
-const Navbar = () => {
+import FirstPart from './FirstPart';
+const Main = () => {
   const techSectionRef = useRef(null);
 
   const handleTechClick = () => {
@@ -19,11 +19,14 @@ const Navbar = () => {
         <p className="navbar-text">Kontakt</p>
         <p className="navbar-text">CV</p>
       </div>
-      <div ref={techSectionRef} className="tech-section">
-        <Tech />
+      <div className="background-center-div">
+        <FirstPart />
+        <div ref={techSectionRef} className="tech-section">
+          <Tech />
+        </div>
       </div>
     </>
   );
 };
 
-export default Navbar;
+export default Main;
