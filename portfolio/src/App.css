@@ -170,3 +170,33 @@ body {
   font-size: 3rem;
   text-align: center;
 }
+
+.javascript {
+  filter: drop-shadow(0rem 0rem 2rem #f1ed00);
+}
+.javascript.flick {
+  animation: photoflicker 5s infinite alternate;
+}
+
+@keyframes photoflicker {
+  24%,
+  26%,
+  30%,
+  33%,
+  64%,
+  66%,
+  68%,
+  100% {
+    opacity: 1;
+  }
+  0%,
+  22%,
+  25%,
+  27%,
+  29%,
+  31%,
+  65%,
+  67% {
+    opacity: 0;
+  }
+}
