@@ -27,15 +27,13 @@ const Main = () => {
         <p className="navbar-text">Kontakt</p>
         <p className="navbar-text">CV</p>
       </div>
-      <div className="background-center-div">
-        <div ref={startSectionRef} className="start-section">
-          <FirstPart />
-        </div>
-        <div ref={techSectionRef} className="tech-section">
-          {' '}
-        </div>
-        <Tech />
+      <div ref={startSectionRef} className="start-section">
+        <FirstPart />
       </div>
+      <div ref={techSectionRef} className="tech-section">
+        {' '}
+      </div>
+      <Tech />
     </>
   );
 };

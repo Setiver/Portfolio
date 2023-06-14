@@ -40,9 +40,9 @@ const Tech = () => {
         </div>
         <Fade big>
           <div className="icons-apps">
-            <img src={JS} alt="javascript" ref={ref} className={`javascript icons-position-transform ${visible === true ? '' : 'flick'}`} />
-            <img src={HTML} alt="html" ref={ref} className={`html icons-position-transform ${visible === true ? '' : 'flick'}`} />
-            <img src={CSS} alt="css" ref={ref} className={`css icons-position-transform ${visible === true ? '' : 'flick'}`} />
+            <img src={JS} alt="javascript" ref={ref} className={`javascript  ${visible === true ? '' : 'flick'}`} />
+            <img src={HTML} alt="html" ref={ref} className={`html  ${visible === true ? '' : 'flick'}`} />
+            <img src={CSS} alt="css" ref={ref} className={`css  ${visible === true ? '' : 'flick'}`} />
           </div>
         </Fade>
       </div>
