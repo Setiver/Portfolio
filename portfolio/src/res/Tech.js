@@ -47,6 +47,8 @@ const Tech = () => {
             <img src={GIT} alt="git" ref={ref} className={`git  ${visible === true ? '' : 'flick'}`} />
             <img src={PREMIERE} alt="premiere" ref={ref} className={`premiere second-line-icons  ${visible === true ? '' : 'flick'}`} />
             <img src={PHOTOSHOP} alt="photoshop" ref={ref} className={`photoshop second-line-icons  ${visible === true ? '' : 'flick'}`} />
+            <img src={ILLUSTRATOR} alt="illustrator" ref={ref} className={`illustrator second-line-icons  ${visible === true ? '' : 'flick'}`} />
+            <img src={OFFICE} alt="office" ref={ref} className={`office second-line-icons  ${visible === true ? '' : 'flick'}`} />
           </div>
         </Fade>
       </div>

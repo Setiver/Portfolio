@@ -1,5 +1,5 @@
 import Tech from './Tech';
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import FirstPart from './FirstPart';
 
 const Main = () => {

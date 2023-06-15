@@ -568,3 +568,144 @@ body {
     opacity: 0;
   }
 }
+
+.illustrator {
+  position: absolute;
+  left: 59%;
+  transform: translate(-50%, 0);
+
+  filter: drop-shadow(0rem 0rem 2.6rem #c14000);
+  animation: illustratorpulse 2.8s infinite alternate;
+}
+.illustrator.flick {
+  animation: illustratorflicker 5s infinite alternate;
+}
+
+@keyframes illustratorpulse {
+  0% {
+    filter: drop-shadow(0rem 0rem 2.6rem #c14000);
+  }
+  100% {
+    filter: drop-shadow(0rem 0rem 1.4rem #c14000);
+  }
+}
+
+@keyframes illustratorflicker {
+  66%,
+  72%,
+  100% {
+    opacity: 1;
+  }
+  47%,
+  56%,
+  64%,
+  70% {
+    opacity: 0.8;
+  }
+  38%,
+  46%,
+  58%,
+  68% {
+    opacity: 0.6;
+  }
+  31%,
+  37%,
+  62% {
+    opacity: 0.4;
+  }
+  25%,
+  30%,
+  60% {
+    opacity: 0.2;
+  }
+  0%,
+  24%,
+  57%,
+  59%,
+  61%,
+  63%,
+  65%,
+  67%,
+  69%,
+  71% {
+    opacity: 0;
+  }
+}
+
+.office {
+  position: absolute;
+  left: 75%;
+  transform: translate(-50%, 0);
+
+  filter: drop-shadow(0rem 0rem 0.7rem #ff5100);
+  animation: officepulse 3s infinite alternate;
+}
+.office.flick {
+  animation: officeflicker 5s infinite alternate;
+}
+
+@keyframes officepulse {
+  0% {
+    filter: drop-shadow(0rem 0rem 0.7rem #ff5100);
+  }
+  100% {
+    filter: drop-shadow(0rem 0rem 1.2rem #ff5100);
+  }
+}
+
+@keyframes officeflicker {
+  8%,
+  14%,
+  16%,
+  18%,
+  20%,
+  26%,
+  29%,
+  32%,
+  34%,
+  36%,
+  50%,
+  60%,
+  63%,
+  78%,
+  81%,
+  84%,
+  87%,
+  90%,
+  100% {
+    opacity: 1;
+  }
+  21%,
+  23%,
+  25%,
+  28%,
+  31%,
+  37%,
+  61%,
+  79%,
+  82%,
+  85%,
+  88% {
+    opacity: 0.5;
+  }
+
+  0%,
+  7%,
+  15%,
+  17%,
+  19%,
+  24%,
+  27%,
+  30%,
+  33%,
+  35%,
+  38%,
+  49%,
+  62%,
+  80%,
+  83%,
+  86%,
+  89% {
+    opacity: 0;
+  }
+}
