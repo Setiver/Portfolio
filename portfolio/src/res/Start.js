@@ -1,7 +1,7 @@
 import BackNeon from './img/backneon.png';
 import hah from './img/hah.jpg';
 
-const FirstPart = () => {
+const Start = () => {
   return (
     <>
       <div className="photo-border">
@@ -15,4 +15,4 @@ const FirstPart = () => {
   );
 };
 
-export default FirstPart;
+export default Start;
