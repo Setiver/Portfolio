@@ -8,6 +8,7 @@ import JS from './img/icons/js.png';
 import REACT from './img/icons/react.png';
 import GIT from './img/icons/git.png';
 
+import Line from './Line';
 import Fade from 'react-reveal/Fade';
 import { useState, useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
@@ -31,13 +32,7 @@ const Tech = () => {
   return (
     <>
       <div className="second-part">
-        <div className="what-i-use">
-          <Fade bottom>
-            <p className="what-i-use-text">WHAT I USE</p>
-          </Fade>
-          <div className={`line left ${visibleLine === true ? 'show' : ''}`}></div>
-          <div className={`line right ${visibleLine === true ? 'show' : ''}`}></div>
-        </div>
+        <Line text="WHAT I USE" />
         <Fade big>
           <div className="icons-apps">
             <img src={JS} alt="javascript" ref={ref} className={`javascript  ${visible === true ? '' : 'flick'}`} />

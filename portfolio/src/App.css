@@ -130,6 +130,11 @@ body {
   width: 60vh;
   z-index: -1;
   background-size: 700% 100%;
+  opacity: 0;
+  transition: 2s;
+}
+.line.show {
+  opacity: 1;
 }
 
 .line.left {
@@ -714,4 +719,11 @@ body {
 .third-part {
   position: absolute;
   top: 200vh;
+  width: 100%;
+  height: 100vh;
+}
+
+.pojects-section {
+  position: absolute;
+  top: 190vh;
 }
