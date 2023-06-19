@@ -1,5 +1,5 @@
 import Tech from './Tech';
-import { useRef, useState } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import Start from './Start';
 import Projects from './Projects';
 import Fade from 'react-reveal/Fade';
@@ -9,6 +9,14 @@ const Main = () => {
   const techSectionRef = useRef(null);
   const projectsSectionRef = useRef(null);
   const contactSectionRef = useRef(null);
+
+  const [isBlack, setIsBlack] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsBlack(false);
+    }, 5000);
+  }, []);
 
   const handleScrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -21,16 +29,16 @@ const Main = () => {
   return (
     <>
       <div className="navbar-div">
-        <p className="navbar-text start" onClick={handleScrollToTop}>
+        <p className={`navbar-text start ${isBlack === true ? 'light-off-start' : ''} `} onClick={handleScrollToTop}>
           Start
         </p>
-        <p className="navbar-text" onClick={() => handleSectionClick(techSectionRef)}>
+        <p className={`navbar-text  ${isBlack === true ? 'light-off-tech' : ''} `} onClick={() => handleSectionClick(techSectionRef)}>
           Tech
         </p>
-        <p className="navbar-text" onClick={() => handleSectionClick(projectsSectionRef)}>
+        <p className={`navbar-text  ${isBlack === true ? 'light-off-projects' : ''} `} onClick={() => handleSectionClick(projectsSectionRef)}>
           PROJECTS
         </p>
-        <p className="navbar-text" onClick={() => handleSectionClick(contactSectionRef)}>
+        <p className={`navbar-text  ${isBlack === true ? 'light-off-contact' : ''} `} onClick={() => handleSectionClick(contactSectionRef)}>
           Contact
         </p>
       </div>
