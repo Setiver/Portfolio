@@ -28,7 +28,7 @@ const Main = () => {
 
   return (
     <>
-      <div className="navbar-div">
+      <div className={`navbar-div ${isBlack === true ? 'light-off-navbar' : ''}`}>
         <p className={`navbar-text start ${isBlack === true ? 'light-off-start' : ''} `} onClick={handleScrollToTop}>
           Start
         </p>
@@ -42,6 +42,8 @@ const Main = () => {
           Contact
         </p>
       </div>
+      {isBlack && <div className="blackout"></div>}
+
       <div ref={startSectionRef} className="start-section">
         <Start />
       </div>
@@ -52,9 +54,20 @@ const Main = () => {
       <div ref={contactSectionRef} className="contact-section"></div>
       <Fade>
         <div className="fourth-part">
-          <p className="contacts">Email: lukasjaniak44@gmail.com</p>
-          <p className="contacts">Phone: +48 506 835 751</p>
-          <p className="contacts">GitHub: https://github.com/Setiver</p>
+          <p className="contacts">
+            Email: <p>lukasjaniak44@gmail.com</p>
+          </p>
+          <p className="contacts">
+            Phone: <p>+48 506 835 751</p>
+          </p>
+          <p className="contacts">
+            GitHub:{' '}
+            <p>
+              <a href="https://github.com/Setiver" className="git-link">
+                https://github.com/Setiver
+              </a>
+            </p>
+          </p>
         </div>
       </Fade>
     </>
