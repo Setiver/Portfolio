@@ -1,33 +1,54 @@
-import Fade from 'react-reveal/Fade';
-import { useState, useEffect } from 'react';
-import { useInView } from 'react-intersection-observer';
 import Line from './Line';
+import TTRPG from './img/site/TTRPG.png';
+import GUESS from './img/site/guess.png';
+import SEARCHER from './img/site/Search.png';
+import Fade from 'react-reveal/Fade';
 
 const Projects = () => {
+  //
   return (
     <>
       <div className="third-part">
         <Line text="WHAT I DID" />
-        <div class="frame-container">
+        <Fade left>
           <div className="ttrpg-container">
-            <iframe src="https://calculatorfantasy.netlify.app/" title="TTRPG" className="ttrpg"></iframe>
+            <a href="https://calculatorfantasy.netlify.app/" rel="noreferrer" target="_blank">
+              <img src={TTRPG} alt="TTRPG" title="TTRPG" className="ttrpg "></img>
+              <div className={`hovering`}>
+                <p className="hovering-text">CLICK</p>
+              </div>
+            </a>
             <p className="ttrpg-text">
               I created this for me and my friends for easier fights in our TTRPG camapains. I did it entirely by myself and the whole site is an
               original idea. There is a 'Instruction' button for all informations about how everything works. It's a full React.js project.
             </p>
           </div>
+        </Fade>
+        <Fade right>
           <div className="guess-container">
-            <iframe src="https://guessthenumberlj.netlify.app/" title="guess" className="guess"></iframe>
+            <a href="https://guessthenumberlj.netlify.app/" rel="noreferrer" target="_blank">
+              <img src={GUESS} alt="GUESS" title="guess" className="guess"></img>
+              <div className={`hovering guess`}>
+                <p className="hovering-text">CLICK</p>
+              </div>
+            </a>
             <p className="guess-text">
               It's a fully vanilla JavaScript game. The rules are simple: guess a number from 1 to 50. Game shows if your guess is above or below a
               number that was randomly choosed.
             </p>
           </div>
+        </Fade>
+        <Fade left>
           <div className="searcher-container">
-            <iframe src="https://foodsearcherer.netlify.app/" title="searcher" className="searcher"></iframe>
+            <a href="https://foodsearcherer.netlify.app/" rel="noreferrer" target="_blank">
+              <img src={SEARCHER} alt="SEARCHER" title="searcher" className="searcher"></img>
+              <div className={`hovering`}>
+                <p className="hovering-text">CLICK</p>
+              </div>
+            </a>
             <p className="searcher-text">Thats a API searcher for random food. It's show a recipe, ingredients, yt video and final result.</p>
           </div>
-        </div>
+        </Fade>
       </div>
     </>
   );
