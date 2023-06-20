@@ -19,8 +19,8 @@ const Projects = () => {
               </div>
             </a>
             <p className="ttrpg-text">
-              I created this for me and my friends for easier fights in our TTRPG camapains. I did it entirely by myself and the whole site is an
-              original idea. There is a 'Instruction' button for all informations about how everything works. It's a full React.js project.
+              I created this for me and my friends for easier fights in our TTRPG campaigns. I did it entirely by myself and the whole site is an
+              original idea. There is an 'Instruction' button for all information about how everything works. It's a full React.js project.
             </p>
           </div>
         </Fade>
@@ -34,7 +34,7 @@ const Projects = () => {
             </a>
             <p className="guess-text">
               It's a fully vanilla JavaScript game. The rules are simple: guess a number from 1 to 50. Game shows if your guess is above or below a
-              number that was randomly choosed.
+              number that was randomly chosen.
             </p>
           </div>
         </Fade>
@@ -46,7 +46,7 @@ const Projects = () => {
                 <p className="hovering-text">CLICK</p>
               </div>
             </a>
-            <p className="searcher-text">Thats a API searcher for random food. It's show a recipe, ingredients, yt video and final result.</p>
+            <p className="searcher-text">It's an API searcher for random food. It shows a recipe, ingredients, YouTube video and final result.</p>
           </div>
         </Fade>
       </div>
