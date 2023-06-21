@@ -1,0 +1,193 @@
+@media (min-width: 0px) and (max-width: 450) {
+  .navbar-div {
+    gap: 5rem;
+  }
+
+  .photo {
+    position: absolute;
+    top: 21%;
+    left: 28.5%;
+    width: 17rem;
+    height: 17rem;
+    border-radius: 300px 300px 300px 300px;
+    z-index: -1;
+  }
+  .photo-border {
+    position: absolute;
+    top: 18%;
+    left: 0%;
+  }
+  .about-me {
+    font-size: 2rem;
+    position: absolute;
+    left: 55%;
+    top: 30%;
+    width: 27rem;
+    word-wrap: break-word;
+    text-align: justify;
+  }
+  .backneon {
+    width: 40rem;
+    height: 27rem;
+  }
+  /* second part */
+  .line {
+    width: 41vh;
+    z-index: -1;
+    background-size: 700% 100%;
+    opacity: 0;
+    transition: 2s;
+  }
+  .line.left {
+    left: 10%;
+  }
+
+  .line.right {
+    left: 61%;
+  }
+
+  .what-i-use-text {
+    position: relative;
+    left: 40%;
+    width: fit-content;
+  }
+  .html,
+  .css,
+  .javascript,
+  .react,
+  .git,
+  .premiere,
+  .photoshop,
+  .illustrator,
+  .office {
+    width: 7rem;
+  }
+
+  .html {
+    left: 18.5%;
+  }
+
+  .css {
+    left: 34.5%;
+  }
+
+  .javascript {
+    left: 50.5%;
+  }
+
+  .react {
+    left: 66.5%;
+  }
+
+  .git {
+    left: 82.5%;
+  }
+
+  .second-line-icons {
+    top: 16rem;
+  }
+
+  .premiere {
+    left: 26.5%;
+  }
+
+  .photoshop {
+    left: 43%;
+  }
+
+  .illustrator {
+    left: 59%;
+  }
+
+  .office {
+    left: 75%;
+  }
+
+  /* -------------------------- third part ---------------------------*/
+  .ttrpg,
+  .guess,
+  .searcher {
+    width: 350px;
+    height: 200px;
+    position: absolute;
+  }
+
+  .hovering {
+    position: absolute;
+    width: 350px;
+    height: 200px;
+    font-size: 6rem;
+  }
+
+  .hovering.guess {
+    left: 59%;
+  }
+
+  .ttrpg-container {
+    position: absolute;
+    width: 79%;
+    height: 35%;
+    left: 10.2%;
+  }
+  .ttrpg-text {
+    left: 45%;
+    font-size: 1.58rem;
+  }
+
+  .guess-container {
+    position: absolute;
+    top: 40%;
+    left: 10.2%;
+    width: 77%;
+    height: 35%;
+  }
+
+  .guess {
+    position: absolute;
+    left: 59%;
+  }
+
+  .guess-text {
+    font-size: 1.58rem;
+    max-width: 57%;
+  }
+
+  .searcher-container {
+    position: absolute;
+    top: 73%;
+    left: 10.2%;
+    width: 79%;
+    height: 35%;
+  }
+
+  .searcher-text {
+    font-size: 1.58rem;
+    left: 45%;
+  }
+
+  /* contact */
+  .contact-section {
+    position: absolute;
+    top: 310vh;
+  }
+
+  .fourth-part {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 1.5rem;
+    gap: 7%;
+    position: absolute;
+    top: 320vh;
+    background-color: #000b0e;
+  }
+
+  .contacts {
+    position: relative;
+    bottom: 5%;
+    width: fit-content;
+    height: fit-content;
+  }
+}

@@ -6,7 +6,7 @@ const Start = () => {
     <>
       <div className="photo-border">
         <img src={ja} alt="ja" className="photo" />
-        <img src={BackNeon} alt="bakcneon" />
+        <img src={BackNeon} alt="backneon" className="backneon" />
       </div>
       <div className="about-me">
         <p>
