@@ -1,54 +1,79 @@
-@media (min-width: 0px) and (max-width: 450) {
-  .navbar-div {
-    gap: 5rem;
+@media (min-width: 0px) and (max-width: 450px) {
+  .blackout {
+    background-color: black;
+    width: 135%;
+    height: 400%;
+    z-index: 3;
+    position: absolute;
+    animation: light-off-blackout 5s infinite alternate;
   }
 
+  .navbar-div {
+    gap: 3rem;
+  }
+
+  .navbar-text {
+    top: 35%;
+    font-size: 1.1rem;
+  }
+  .navbar-text.start {
+    animation: flicker 5s infinite alternate;
+    font-size: 1.8rem;
+    top: 24%;
+  }
+  /* start */
   .photo {
     position: absolute;
     top: 21%;
     left: 28.5%;
-    width: 17rem;
-    height: 17rem;
-    border-radius: 300px 300px 300px 300px;
+    width: 15rem;
+    height: 15rem;
     z-index: -1;
   }
   .photo-border {
     position: absolute;
-    top: 18%;
-    left: 0%;
+    top: 12%;
+    left: 4%;
   }
   .about-me {
-    font-size: 2rem;
+    font-size: 1.8rem;
     position: absolute;
-    left: 55%;
-    top: 30%;
-    width: 27rem;
-    word-wrap: break-word;
-    text-align: justify;
+    left: 11%;
+    top: 66%;
+    width: 32rem;
   }
   .backneon {
-    width: 40rem;
-    height: 27rem;
+    border: none;
+    height: 26rem;
+    max-width: fit-content;
+    width: 35rem;
   }
   /* second part */
   .line {
-    width: 41vh;
+    width: 22vh;
     z-index: -1;
     background-size: 700% 100%;
     opacity: 0;
     transition: 2s;
   }
   .line.left {
-    left: 10%;
+    left: 12%;
   }
 
   .line.right {
-    left: 61%;
-  }
+    position: absolute;
 
-  .what-i-use-text {
+    left: 200%;
+  }
+  .what-i-use {
+    font-size: 3rem;
+    font-family: 'Bulzing';
     position: relative;
-    left: 40%;
+    left: 0rem;
+    width: fit-content;
+  }
+  .what-i-use-text {
+    left: 12rem;
     width: fit-content;
   }
   .html,
@@ -60,133 +85,146 @@
   .photoshop,
   .illustrator,
   .office {
-    width: 7rem;
+    width: 8rem;
   }
 
-  .html {
-    left: 18.5%;
+  .html,
+  .office,
+  .premiere {
+    left: 23%;
+  }
+  .premiere {
+    top: 26rem;
+  }
+  .office {
+    top: 13rem;
   }
 
-  .css {
-    left: 34.5%;
-  }
-
-  .javascript {
-    left: 50.5%;
+  .css,
+  .react,
+  .photoshop {
+    left: 71%;
   }
 
   .react {
-    left: 66.5%;
-  }
-
-  .git {
-    left: 82.5%;
-  }
-
-  .second-line-icons {
-    top: 16rem;
-  }
-
-  .premiere {
-    left: 26.5%;
+    top: 13rem;
   }
 
   .photoshop {
-    left: 43%;
+    top: 26rem;
+  }
+
+  .javascript,
+  .git,
+  .illustrator {
+    left: 116%;
+  }
+
+  .git {
+    top: 13rem;
   }
 
   .illustrator {
-    left: 59%;
-  }
-
-  .office {
-    left: 75%;
+    top: 26rem;
   }
 
   /* -------------------------- third part ---------------------------*/
+  .third-part {
+    position: absolute;
+    top: 210vh;
+    width: 100%;
+    height: 100vh;
+  }
+
   .ttrpg,
   .guess,
   .searcher {
-    width: 350px;
-    height: 200px;
+    width: 510px;
+    height: 360px;
     position: absolute;
   }
 
   .hovering {
     position: absolute;
-    width: 350px;
-    height: 200px;
-    font-size: 6rem;
+    width: 510px;
+    height: 360px;
+    font-size: 10rem;
+    left: -2%;
   }
 
   .hovering.guess {
-    left: 59%;
+    left: -2%;
   }
 
   .ttrpg-container {
     position: absolute;
-    width: 79%;
+    width: 118%;
     height: 35%;
     left: 10.2%;
   }
+  .ttrpg,
+  .guess,
+  .searcher {
+    left: -2%;
+  }
   .ttrpg-text {
-    left: 45%;
-    font-size: 1.58rem;
+    top: 24rem;
+    left: -2%;
+    font-size: 1.6rem;
   }
 
   .guess-container {
     position: absolute;
-    top: 40%;
-    left: 10.2%;
-    width: 77%;
+    top: 90%;
+    width: 125%;
     height: 35%;
-  }
-
-  .guess {
-    position: absolute;
-    left: 59%;
+    left: 10.2%;
   }
 
   .guess-text {
-    font-size: 1.58rem;
-    max-width: 57%;
+    font-size: 1.6rem;
+    left: -2%;
+    max-width: 96%;
+    top: 24rem;
   }
 
   .searcher-container {
     position: absolute;
-    top: 73%;
-    left: 10.2%;
-    width: 79%;
+    top: 165%;
+    width: 125%;
     height: 35%;
+    left: 10.2%;
   }
 
   .searcher-text {
-    font-size: 1.58rem;
-    left: 45%;
+    font-size: 1.6rem;
+    left: -2%;
+    top: 24rem;
+    width: 97%;
   }
 
   /* contact */
   .contact-section {
     position: absolute;
-    top: 310vh;
+    top: 440vh;
   }
 
   .fourth-part {
-    width: 100%;
+    width: 135%;
     height: 5rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
     gap: 7%;
     position: absolute;
-    top: 320vh;
-    background-color: #000b0e;
+    top: 450vh;
+    background-color: #000000;
   }
 
   .contacts {
     position: relative;
-    bottom: 5%;
+    top: 20%;
     width: fit-content;
     height: fit-content;
   }
