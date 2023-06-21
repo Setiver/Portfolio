@@ -1,11 +1,11 @@
 import BackNeon from './img/backneon.png';
-import hah from './img/hah.jpg';
+import ja from './img/ja.png';
 
 const Start = () => {
   return (
     <>
       <div className="photo-border">
-        <img src={hah} alt="hah" className="photo" />
+        <img src={ja} alt="ja" className="photo" />
         <img src={BackNeon} alt="bakcneon" />
       </div>
       <div className="about-me">
