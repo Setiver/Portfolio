@@ -19,8 +19,9 @@ const Projects = () => {
               </div>
             </a>
             <p className="ttrpg-text">
-              I created this for me and my friends for easier fights in our TTRPG campaigns. I did it entirely by myself and the whole site is an
-              original idea. There is an 'Instruction' button for all information about how everything works. It's a full React.js project.
+              I created this for me and my friends for easier fights in our TTRPG campaigns. I did it entirely by myself including pictures and the
+              whole site is an original idea. There is an 'Instruction' button for all information about how everything works. It's a full React.js
+              project.
             </p>
           </div>
         </Fade>
